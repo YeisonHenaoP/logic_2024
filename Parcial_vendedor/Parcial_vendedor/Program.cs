@@ -29,16 +29,18 @@
         {
             ventaMayor = venta3;
         }
+        Console.Write($"\nLa venta que te generó mayor comisión fue: {ventaMayor:C0}");
         promComisiones = (com1 + com2 + com3) / 3;
+        Console.Write($"\nEl promedio de comisines fue: {promComisiones:C0}");
         totalVentas = venta1 + venta2 + venta3;
         if (totalVentas > 1000000)
         {
             bono = 100000;
-            Console.Write($"¡Felicidades alcanzaste el bono extra!\ntu sueldo total con el bono y las comisiones es {(SueldoTotal + bono):C0}");
+            Console.Write($"\n¡Felicidades alcanzaste el bono extra!\ntu sueldo total con el bono y las comisiones es {(SueldoTotal + bono):C0}\n\n\n\n\n");
         }
         else
         {
-            Console.Write($"No alcanzaste el bono =( \nasí que tu sueldo total con las comisiones es: {(SueldoTotal):C0}");
+            Console.Write($"\nNo alcanzaste el bono =( \nAsí que tu sueldo total con las comisiones es: {(SueldoTotal):C0}\n\n\n\n\n");
         }
     }
 }
