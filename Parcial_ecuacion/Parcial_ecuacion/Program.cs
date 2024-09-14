@@ -12,6 +12,13 @@
         {
             Console.Write("\nLa ecuacion no tiene solucion");
         }
-        
+        else if (x == 0)
+        {
+            Console.Write("\nLa ecuacion tiene infinitas soluciones");
+        }
+        else
+        {
+            Console.WriteLine($"\nEl resultado Unico es: {x}");
+        }
     }
 }
