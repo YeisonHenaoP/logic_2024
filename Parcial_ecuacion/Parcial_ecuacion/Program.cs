@@ -10,15 +10,15 @@
         x = (-b / a);
         if (a == 0)
         {
-            Console.Write("\nLa ecuacion no tiene solucion");
+            Console.Write("\nLa ecuacion no tiene solucion\n\n\n\n\n");
         }
         else if (x == 0)
         {
-            Console.Write("\nLa ecuacion tiene infinitas soluciones");
+            Console.Write("\nLa ecuacion tiene infinitas soluciones\n\n\n\n\n");
         }
         else
         {
-            Console.WriteLine($"\nEl resultado Unico es: {x}");
+            Console.WriteLine($"\nEl resultado Unico es: {x}\n\n\n\n\n");
         }
     }
 }
