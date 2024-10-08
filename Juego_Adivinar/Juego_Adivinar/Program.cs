@@ -35,7 +35,17 @@
                 {
                     Console.WriteLine("MENOR");
                 }
-                
+                else
+                {
+                    Console.WriteLine($"¡Jugador {jugadorActual}, HAS GANADO!");
+                    numeroAdivinado = true;
+                }
+                turno++;
+            }
+            Console.Write("¿Desean jugar de nuevo? (s/n): ");
+            string respuesta = Console.ReadLine().ToLower();
+            jugarDeNuevo = (respuesta == "s");
+        }
 
 
     }
