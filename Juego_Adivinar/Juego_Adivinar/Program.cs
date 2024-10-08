@@ -22,8 +22,20 @@
             Console.WriteLine($"Se ha generado un número secreto entre 0 y {rangoMax}. ¡Que comience el juego!");
             bool numeroAdivinado = false;
             int turno = 0;
-           
-        }
+            while (!numeroAdivinado)
+            {
+                int jugadorActual = (turno % numJugadores) + 1;
+                Console.Write($"Jugador {jugadorActual}, ingrese su intento: ");
+                int intento = int.Parse(Console.ReadLine());
+                if (intento < numeroSecreto)
+                {
+                    Console.WriteLine("MAYOR");
+                }
+                else if (intento > numeroSecreto)
+                {
+                    Console.WriteLine("MENOR");
+                }
+                
 
 
     }
