@@ -18,7 +18,14 @@
                 Console.Write("Ingrese la cantidad de notas del estudiante: ");
                 int cantidadNotas = int.Parse(Console.ReadLine());
                 double sumaNotas = 0;
-                
+                for (int j = 1; j <= cantidadNotas; j++)
+                {
+                    Console.Write($"Ingrese la nota {j}: ");
+                    double nota = double.Parse(Console.ReadLine());
+                    sumaNotas += nota;
+                }
+                double promedio = sumaNotas / cantidadNotas;
+                Console.WriteLine($"Promedio del estudiante {i}: {promedio:F2}");
 
             }
         }
