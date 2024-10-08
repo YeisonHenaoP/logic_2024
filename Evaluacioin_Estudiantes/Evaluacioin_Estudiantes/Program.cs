@@ -26,6 +26,33 @@
                 }
                 double promedio = sumaNotas / cantidadNotas;
                 Console.WriteLine($"Promedio del estudiante {i}: {promedio:F2}");
-
+                if (promedio >= 4.5)
+                {
+                    Console.WriteLine("Categoría: Excelente");
+                    estudiantesGanaron++;
+                }
+                else if (promedio >= 4.0 && promedio <= 4.4)
+                {
+                    Console.WriteLine("Categoría: Sobresaliente");
+                    estudiantesGanaron++;
+                }
+                else if (promedio >= 3.5 && promedio <= 3.9)
+                {
+                    Console.WriteLine("Categoría: Bueno");
+                    estudiantesGanaron++;
+                }
+                else
+                {
+                    Console.WriteLine("Categoría: Insuficiente");
+                    estudiantesPerdieron++;
+                }
             }
+           
+
+            // Preguntar si desean evaluar otro grupo de estudiantes
+            Console.Write("\n¿Desea ingresar otro grupo de estudiantes? (s/n): ");
+            string respuesta = Console.ReadLine().ToLower();
+            continuar = (respuesta == "s");
         }
+    }
+    }
