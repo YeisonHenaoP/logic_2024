@@ -47,9 +47,9 @@
                     estudiantesPerdieron++;
                 }
             }
-           
-
-            // Preguntar si desean evaluar otro grupo de estudiantes
+            Console.WriteLine("\nResumen:");
+            Console.WriteLine($"Estudiantes que ganaron: {estudiantesGanaron}");
+            Console.WriteLine($"Estudiantes que perdieron: {estudiantesPerdieron}");
             Console.Write("\n¿Desea ingresar otro grupo de estudiantes? (s/n): ");
             string respuesta = Console.ReadLine().ToLower();
             continuar = (respuesta == "s");
